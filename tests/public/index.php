@@ -2,9 +2,7 @@
 require __DIR__ . '/../../vendor/autoload.php';
 
 use Wt\ArrayMenu;
-
 ?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -16,7 +14,6 @@ use Wt\ArrayMenu;
 </head>
 <body>
 <?php
-
 $array_b = [
     'home' => [
         'name' => 'Label for Home',
@@ -34,17 +31,15 @@ $array_b = [
         'class' => 'nav-link active',
     ]
 ];
+
+$config = [
+    'color' => 'bg-warning',
+];
+
+$menu_d = new ArrayMenu\Bootstrap($array_b, $config = []);
+echo $menu_d;
+
 ?>
-
-
-        <?php
-        $config = [
-            'color' => 'bg-warning',
-        ];
-
-        $menu_d = new ArrayMenu\Bootstrap($array_b, $config);
-        echo $menu_d;?>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>

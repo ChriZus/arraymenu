@@ -24,7 +24,7 @@ class Bootstrap extends ArrayMenuController
      * @var array
      */
     protected array $config = [
-        'position' => 'fixed-top',
+        'position' => 'default',
         'color' => 'bg-primary',
         'container' => 'container',
         'brand' => [

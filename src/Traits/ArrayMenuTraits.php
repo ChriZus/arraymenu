@@ -14,12 +14,12 @@ trait ArrayMenuTraits
     /**
      * @var array|string[]
      */
-    protected array $init = ['tag' => 'ul', 'class' => ''];
+    protected array $init = ['tag' => 'ul'];
 
     /**
      * @var array|string[]
      */
-    protected array $item = ['tag' => 'li', 'class' => ''];
+    protected array $item = ['tag' => 'li'];
 
     /**
      * @var array
