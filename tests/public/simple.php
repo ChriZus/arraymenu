@@ -1,9 +1,14 @@
 <?php
-include __DIR__ . '/src/Controller/MenuController.php';
+require __DIR__ . '/../../vendor/autoload.php';
 
-use WtMenu\Controller\MenuController;
+use Wt\ArrayMenu;
 
 $array_simple = [
+    'config' => [
+        'type' => 'I',
+        'start' => 2,
+        'class' => 'more_class',
+    ],
     'home' => [
         'name' => 'Label for Home',
         'link' => '#',
@@ -14,6 +19,10 @@ $array_simple = [
 ];
 
 $array_level_one = [
+    'config' => [
+        'type' => 'A',
+        'class' => 'more_class',
+    ],
     'home' => [
         'name' => 'Label for Home',
         'link' => '#',
@@ -45,7 +54,7 @@ $array_level_one = [
 $array_level_two = [
     'home' => [
         'name' => 'Label for Home',
-        'link' => '#'
+        'link' => '#',
     ],
     'contact' => [
         'name' => 'Label for Contact',
@@ -60,7 +69,7 @@ $array_level_two = [
         'link' => '#',
         'level' => [
             'product_man' => [
-                'name' => 'Label for Man (into Producst)',
+                'name' => 'Label for Man (into Product)',
                 'link' => '#',
                 'level' => [
                     'product_man_shoes' => [
@@ -73,15 +82,15 @@ $array_level_two = [
                     ],
                 ]
             ],
-            'produtc_woman' => [
-                'name' => 'Label for Woman (into Producst)',
+            'product_woman' => [
+                'name' => 'Label for Woman (into Product)',
                 'link' => '#',
                 'level' => [
                     'product_woman_dress' => [
                         'name' => 'Label for Dress  (into Woman)',
                         'link' => '#',
                     ],
-                    'product_woman_pantuhose' => [
+                    'product_woman_pantyhose' => [
                         'name' => 'Label for Pantyhose (into Woman)',
                         'link' => '#',
                     ],
@@ -91,31 +100,32 @@ $array_level_two = [
     ]
 ];
 
-$menu = new MenuController($array_simple);
-echo $menu->start()->show();
+$menu = new ArrayMenu\Simple($array_simple);
+$menu->setInit(['tag'=>'ol', 'class' =>'my_class']);
+echo $menu;
 
 echo "\n\n\n";
 
-$menu_a = new MenuController($array_simple);
-$menu_a->setInit("ul class='my_class'");
-echo $menu_a->start()->show();
+$menu_a = new ArrayMenu\Simple($array_simple);
+$menu_a->setInit(['tag'=>'ul', 'class' =>'my_class']);
+echo $menu_a;
 
 echo "\n\n\n";
 
-$menu_b = new MenuController($array_level_one);
-$menu_b->setInit("ul class='my_class class_for_ul'");
-$menu_b->setItem("li class='my_class_for_item other'");
-echo $menu_b->start()->show();
+$menu_b = new ArrayMenu\Simple($array_level_one);
+$menu_b->setInit(['tag'=>'ol', 'class' =>'my_class class_for_ul']);
+$menu_b->setItem(['tag'=>'li', 'class' =>'my_class_for_item other']);
+echo $menu_b;
 
 echo "\n\n\n";
 
-$menu_c = new MenuController($array_level_two);
-$menu_c->setInit("ol");
-echo $menu_c->start()->show();
+$menu_c = new ArrayMenu\Simple($array_level_two);
+$menu_c->setInit(['tag'=>'ol', 'class' =>'']);
+echo $menu_c;
 
 echo "\n\n\n";
 
-$menu_c = new MenuController($array_simple);
-$menu_c->setInit("dt");
-$menu_c->setItem("dd");
-echo $menu_c->start()->show();
+$menu_c = new ArrayMenu\Simple($array_simple);
+$menu_c->setInit(['tag'=>'dt', 'class' =>'']);
+$menu_c->setItem(['tag'=>'dd', 'class' =>'']);
+echo $menu_c;
