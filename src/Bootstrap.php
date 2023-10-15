@@ -1,8 +1,8 @@
-<?php
+aa<?php
 
-namespace Wt\ArrayMenu;
+namespace BergPlaza\ArrayMenu;
 
-use Wt\ArrayMenu\Controller\ArrayMenuController;
+use BergPlaza\ArrayMenu\Controller\ArrayMenuController;
 
 /**
  *
@@ -30,7 +30,7 @@ class Bootstrap extends ArrayMenuController
         'brand' => [
             'name' => 'WT.dev',
             'image' => false,
-            'link' => 'https://wtabata.com'
+            'link' => 'https://bergplaza.nl'
         ],
         'off_canvas' => [
             'brand' => 'WT.dev',
