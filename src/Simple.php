@@ -1,7 +1,7 @@
 <?php
-namespace Wt\ArrayMenu;
+namespace BergPlaza\ArrayMenu;
 
-use Wt\ArrayMenu\Controller\ArrayMenuController;
+use BergPlaza\ArrayMenu\Controller\ArrayMenuController;
 
 class Simple extends ArrayMenuController
 {
