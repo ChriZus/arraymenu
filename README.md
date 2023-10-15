@@ -1,3 +1,5 @@
+This paaaackage has been forked for personal usage. please visit the priginal package at [wtabata/arraymenu](https://github.com/wtabata/arraymenu)
+
 <h3 align="center">
   ArrayMenu 2
 </h3>
@@ -10,7 +12,7 @@
 Install
 ---------------------------
 ```
-composer require wtabata/arraymenu
+composer require chrizus/arraymenu
 ```
 
 Mode Simple
