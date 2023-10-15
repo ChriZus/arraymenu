@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/../../vendor/autoload.php';
 
-use Wt\ArrayMenu;
+use BergPlaza\ArrayMenu;
 
 $array_simple = [
     'config' => [
