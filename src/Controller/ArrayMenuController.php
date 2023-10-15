@@ -1,8 +1,8 @@
 <?php
 
-namespace Wt\ArrayMenu\Controller;
+namespace BergPlaza\ArrayMenu\Controller;
 
-use Wt\ArrayMenu\Traits;
+use BergPlaza\ArrayMenu\Traits;
 
 /**
  *
