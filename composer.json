@@ -1,13 +1,17 @@
 {
-  "name": "wtabata/arraymenu",
+  "name": "chrizus/arraymenu",
   "description": "Create a nested menu from an array with list items.",
   "keywords": ["array","list","menu","bootstrap","php","html"],
-  "homepage": "https://github.com/wtabata/arraymenu",
+  "homepage": "https://github.com/chrizus/arraymenu",
   "license": "MIT",
   "authors": [
     {
       "name": "William Tabata",
       "homepage": "https://wt.dev.br"
+    },
+    {
+      "name": "Chris van den Berg",
+      "email": "chrizus@gmail.com"
     }
   ],
   "require": {
