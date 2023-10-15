@@ -1,6 +1,6 @@
 <?php
 
-namespace Wt\ArrayMenu\Traits;
+namespace BergPlaza\ArrayMenu\Traits;
 
 trait ArrayMenuTraits
 {
