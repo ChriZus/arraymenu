@@ -1,4 +1,4 @@
-This paaaackage has been forked for personal usage. please visit the priginal package at [wtabata/arraymenu](https://github.com/wtabata/arraymenu)
+This package has been forked for personal usage. please visit the priginal package at [wtabata/arraymenu](https://github.com/wtabata/arraymenu)
 
 <h3 align="center">
   ArrayMenu 2
@@ -30,7 +30,7 @@ $array = [
     ],
 ];
 
-$menu = new \Wt\ArrayMenu\Simple($array);
+$menu = new \BergPlaza\ArrayMenu\Simple($array);
 echo $menu;
 ```
 output
@@ -102,7 +102,7 @@ $array = [
     ]
 ];
 
-$menu = new \WtArrayMenu\Bootstrap($array, $config_bootstrap = []);
+$menu = new \BergPlaza\ArrayMenu\Bootstrap($array, $config_bootstrap = []);
 echo $menu;
 ```
 
